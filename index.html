@@ -117,74 +117,90 @@
   <h2 id="projects-title" class="text-3xl font-bold mb-6 border-b-2 border-blue-600 inline-block pb-1">Key Projects</h2>
   <ul class="list-disc list-inside text-gray-800 text-lg leading-relaxed space-y-3" style="text-align: justify;">
     <li><strong>PhD Project:</strong> Designed an ML pipeline for electromagnetic metasurface design with a 24× speedup, validated via simulations and experiments.</li>
-   <section id="phd-thesis" class="bg-white rounded-lg shadow p-8 max-w-4xl mx-auto mt-10" tabindex="-1" aria-labelledby="phd-thesis-title">
-  <h2 id="phd-thesis-title" class="text-3xl font-bold mb-6 border-b-2 border-blue-600 inline-block pb-1">PhD Thesis</h2>
+   <section id="phd-story" class="bg-white rounded-lg shadow p-8 max-w-4xl mx-auto mt-10" tabindex="-1" aria-labelledby="phd-story-title">
+  <h2 id="phd-story-title" class="text-3xl font-bold mb-6 border-b-2 border-blue-600 inline-block pb-1">
+    Teaching Light to Think: A Machine Learning Journey through Metasurfaces
+  </h2>
+
+  <p class="text-gray-800 text-lg leading-relaxed" style="text-align: justify;">
+    What if we could sculpt the behavior of light—bend it, reshape it, redirect it—using layers no thicker than a strand of DNA? That question drove the core of my PhD research into metasurfaces: ultra-thin, two-dimensional arrays of nanostructures that control electromagnetic waves with surgical precision.
+  </p>
+
+  <p class="text-gray-800 text-lg leading-relaxed mt-4" style="text-align: justify;">
+    But here’s the twist. As transformative as these materials are, designing and simulating them is notoriously slow and computationally expensive. The problem isn’t creativity—it’s time. That’s where I came in.
+  </p>
+
+  <h3 class="text-2xl font-semibold mt-6 mb-3">The Challenge: Speed Meets Complexity</h3>
+  <p class="text-gray-800 text-lg leading-relaxed" style="text-align: justify;">
+    Traditional electromagnetic simulators grind to a halt with large-scale metasurfaces, especially when dealing with complex applications like radar scattering or beam shaping. I wanted to break that barrier—to build a fast, scalable, and intelligent design framework that engineers could actually use in real time.
+  </p>
+
+  <h3 class="text-2xl font-semibold mt-6 mb-3">The Strategy: Let the Machine Learn</h3>
+  <p class="text-gray-800 text-lg leading-relaxed" style="text-align: justify;">
+    I turned to machine learning as a way to leap past computational bottlenecks. I trained supervised models to predict the reflection phase of metasurface unit cells, massively speeding up design workflows. Then I introduced active learning, a smart optimization strategy that decides which simulations to run next—saving time without sacrificing quality.
+  </p>
+
+  
+
+  <p class="text-gray-800 text-lg leading-relaxed" style="text-align: justify;">
+    The results? Instead of 13,000+ minutes using traditional methods, we optimized metasurface arrays in just over an hour—a 24× acceleration in larger arrays. And the cherry on top: designs that actually outperformed previous state-of-the-art techniques.
+  </p>
+
+  <h3 class="text-2xl font-semibold mt-6 mb-3">Beyond Acceleration: Accuracy Reimagined</h3>
+  <p class="text-gray-800 text-lg leading-relaxed" style="text-align: justify;">
+    But speed was only half the equation. I also wanted to enhance analytical precision, especially for effects like mutual coupling—subtle interactions that can derail predictions. Using deep learning, I refined these analytical models, giving the simulations the edge of realism they needed.
+  </p>
+
+  <img src="./AL_flowchart_with_and_without_CST_simulation_modified.png" alt="ML Framework Diagram" class="rounded-md shadow-md w-full my-6" />
+
+  <h3 class="text-2xl font-semibold mt-6 mb-3">The Impact: Scaling the Future of Light</h3>
+  <p class="text-gray-800 text-lg leading-relaxed" style="text-align: justify;">
+    This research culminated in a robust, ML-driven framework for metasurface design, pushing the envelope in electromagnetics and nanophotonics. We’re now closer than ever to real-time, high-precision tools that can shape how we think about radar, imaging systems, and future communication technologies.
+  </p>
+
+  <a href="files/phd_thesis.pdf" target="_blank" rel="noopener noreferrer"
+     class="inline-block mt-6 px-4 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 transition">
+    📄 Download Full Thesis (PDF)
+  </a>
+</section>
+
+	<section id="projects" class="bg-white rounded-lg shadow p-8 max-w-4xl mx-auto" tabindex="-1" aria-labelledby="projects-title">
+  <h2 id="projects-title" class="text-3xl font-bold mb-6 border-b-2 border-blue-600 inline-block pb-1"></h2>
   <ul class="list-disc list-inside text-gray-800 text-lg leading-relaxed space-y-3" style="text-align: justify;">
     <li>
-      <strong>Thesis:</strong> <em>Machine Learning for Design and Optimization of Coding Metasurfaces</em>. You can view or download the full thesis here:
-      <br>
-      <a href="https://drive.google.com/file/d/1ncMpbxQ0XEE_Y5xBKUKbG1U0NhzWm3XX/view?usp=drive_link"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="inline-block mt-2 px-4 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 transition">
-        📄 View / Download Thesis (PDF)
-      </a>
+      <strong>MSc Project:</strong> Developed <em>Cybaural Chef</em>, an Android safety app detecting whistle sounds with 93% accuracy.
+      
+      <div class="mt-4 ml-6">
+        <p class="mb-4">
+          The project aimed to detect whistles generated by pressure cookers to ease homemakers’ burden of monitoring cooking and enhance safety by proactive alerts.
+          This was achieved using supervised machine learning for audio classification with a Support Vector Machine (SVM) classifier.
+        </p>
+        <p class="mb-4">
+          The audio signal, comprising large samples, was processed by extracting representative features from short-term windows (50 ms) and computing statistical representations over mid-term windows (500 ms). These were labeled manually as whistle/no whistle to train the model.
+        </p>
+        <p class="mb-4">
+          Three feature extraction methods were compared to find a robust model: (a) energy and zero crossing rate features with statistical mid-term features, (b) Mel Frequency Cepstral Coefficients (MFCCs) with mean and standard deviation mid-term features, and (c) a combination of the two.
+        </p>
+        <p>
+          The trained model was validated on independent recordings and deployed as an Android application called <em>Cybaural Chef</em>, achieving 93% whistle detection accuracy.
+        </p>
+        <div class="mt-6">
+          <iframe class="w-full aspect-video rounded-md shadow-lg"
+                  src="https://www.youtube.com/embed/MeWA91ohM5g"
+                  title="MSc Project Demo Video"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </div>
     </li>
   </ul>
 </section>
 
 
 
-    <li><strong>MSc Project:</strong> Developed <em>Cybaural Chef</em>, an Android safety app detecting whistle sounds with 93% accuracy.</li>
-
-  <!-- YouTube Video Embed -->
-<div class="mt-6">
-  <iframe class="w-full aspect-video rounded-md shadow-lg"
-          src="https://www.youtube.com/embed/MeWA91ohM5g"
-          title="MSc Project Demo Video"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-  </iframe>
-</div>
-
-</section>
-
-
-<section id="phd-project" class="bg-white rounded-lg shadow p-8 max-w-4xl mx-auto my-8" tabindex="-1" aria-labelledby="phd-project-title">
-  <h2 id="phd-project-title" class="text-3xl font-bold mb-4 border-b-2 border-blue-600 inline-block pb-1">PhD Research Project Summary</h2>
-  <p class="mb-4 text-lg text-gray-800 leading-relaxed" style="text-align: justify;">
-    Developed a fast, real-time electromagnetic simulator for coding metasurfaces—ultra-thin 2D arrays of nanoscale structures that control light properties such as phase, polarization, and direction. 
-    Leveraged supervised machine learning to accurately predict reflection phase of metasurface unit cells, greatly enhancing design efficiency.
-  </p>
-  <p class="mb-4 text-lg text-gray-800 leading-relaxed" style="text-align: justify;">
-    Implemented an active learning optimization strategy that reduced computation time by over 200× compared to traditional genetic algorithms. For example, a 10×10 metasurface array was optimized in 65 minutes instead of 13,260 minutes.
-  </p>
-  <p class="mb-4 text-lg text-gray-800 leading-relaxed" style="text-align: justify;">
-    For larger 60×60 arrays, active learning achieved a 24-fold speedup while improving radar cross-section reduction performance. Deep learning was also used to refine analytical models to address mutual coupling effects, further boosting accuracy.
-  </p>
-  <p class="text-lg text-gray-800 leading-relaxed" style="text-align: justify;">
-    This hybrid machine learning approach established a scalable and precise framework for metasurface design, outperforming existing methods and offering promising advancements in electromagnetics and nanophotonics.
-  </p>
-</section>
-
-<section id="msc-project" class="bg-white rounded-lg shadow p-8 max-w-4xl mx-auto my-8" tabindex="-1" aria-labelledby="msc-project-title">
-  <h2 id="msc-project-title" class="text-3xl font-bold mb-4 border-b-2 border-blue-600 inline-block pb-1">MSc Research Project Summary</h2>
-  <p class="mb-4 text-lg text-gray-800 leading-relaxed" style="text-align: justify;">
-    The project aimed to detect whistles generated by pressure cookers to ease homemakers’ burden of monitoring cooking and enhance safety by proactive alerts.
-    This was achieved using supervised machine learning for audio classification with a Support Vector Machine (SVM) classifier.
-  </p>
-  <p class="mb-4 text-lg text-gray-800 leading-relaxed" style="text-align: justify;">
-    The audio signal, comprising large samples, was processed by extracting representative features from short-term windows (50 ms) and computing statistical representations over mid-term windows (500 ms). These were labeled manually as whistle/no whistle to train the model.
-  </p>
-  <p class="mb-4 text-lg text-gray-800 leading-relaxed" style="text-align: justify;">
-    Three feature extraction methods were compared to find a robust model: (a) energy and zero crossing rate features with statistical mid-term features, (b) Mel Frequency Cepstral Coefficients (MFCCs) with mean and standard deviation mid-term features, and (c) a combination of the two.
-  </p>
-  <p class="text-lg text-gray-800 leading-relaxed" style="text-align: justify;">
-    The trained model was validated on independent recordings and deployed as an Android application called <em>Cybaural Chef</em>, achieving 93% whistle detection accuracy.
-  </p>
-</section>
-
+    
 
 
     <!-- Skills -->
